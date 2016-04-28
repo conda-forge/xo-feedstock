@@ -12,18 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
+  skip: true  # [win or py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
-    - python >=3.4
-    - python x.x
+    - python
     - setuptools
   run:
-    - python >=3.4
-    - python x.x
+    - python
     - urwid >=1.1.1
     - pygments >=1.6
 
@@ -34,7 +32,7 @@ test:
 about:
   home: http://exofrills.org/
   license: WTFPL v2
-  summary: exofrills text editor
+  summary: "exofrills text editor"
 
 extra:
   recipe-maintainers:
