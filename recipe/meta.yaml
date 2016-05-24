@@ -1,6 +1,6 @@
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 # obtained sha256 with "shasum -a -b" command
-{% set sha256 = "bab75f582326bb0db4e49a991ec075908b73fab91e0110482304f21ae5e34cd2" %}
+{% set sha256 = "3ae8a8c676b814425b115423d559875e421446a65d7a52fbd84dce8c2bff919f" %}
 
 package:
   name: xo
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: xo-{{ sha256 }}.tar.gz
-  url: https://github.com/scopatz/xo/archive/8f486a2709d376d00f98c09a86179bce2a99099a.tar.gz
+  url: https://github.com/scopatz/xo/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
