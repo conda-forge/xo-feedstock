@@ -1,6 +1,6 @@
-{% set version = "0.1.12" %}
+{% set version = "0.1.13" %}
 # obtained sha256 with "shasum -a -b" command
-{% set sha256 = "3ae8a8c676b814425b115423d559875e421446a65d7a52fbd84dce8c2bff919f" %}
+{% set sha256 = "dd3a48dd56977bfd92dee2c8b612ad14a1d19f171c77b8a48ecfb68b5de23e5d" %}
 
 package:
   name: xo
@@ -22,6 +22,7 @@ requirements:
     - setuptools
   run:
     - python
+    - lazyasd
     - urwid >=1.1.1
     - pygments >=1.6
 
