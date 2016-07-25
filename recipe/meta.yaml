@@ -23,8 +23,8 @@ requirements:
   run:
     - python
     - lazyasd
-    - urwid >=1.1.1
-    - pygments >=1.6
+    - urwid
+    - pygments
 
 test:
   commands:
