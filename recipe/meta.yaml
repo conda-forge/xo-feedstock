@@ -1,5 +1,5 @@
-{% set version = "0.2.1" %}
-{% set sha256 = "e31622e295faa134e2ee2fa4c8c30de3fbe940e15d8496519974001d1588c8b6" %}
+{% set version = "0.2.2" %}
+{% set sha256 = "43e05b83042c94d57753da50c08c83c0552496fc90edab55a5fa9a6456f44755" %}
 
 package:
   name: xo
