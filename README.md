@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-xo-green.svg)](https://anaconda.org/conda-forge/xo)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xo.svg)](https://anaconda.org/conda-forge/xo)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/xo.svg)](https://anaconda.org/conda-forge/xo)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xo.svg)](https://anaconda.org/conda-forge/xo)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xo-green.svg)](https://anaconda.org/conda-forge/xo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xo.svg)](https://anaconda.org/conda-forge/xo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xo.svg)](https://anaconda.org/conda-forge/xo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xo.svg)](https://anaconda.org/conda-forge/xo) |
 
 Installing xo
 =============

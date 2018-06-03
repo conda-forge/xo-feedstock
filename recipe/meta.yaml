@@ -1,5 +1,5 @@
-{% set version = "0.2.2" %}
-{% set sha256 = "43e05b83042c94d57753da50c08c83c0552496fc90edab55a5fa9a6456f44755" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "23bd965a794361f983e60ab5ce6b42a60dc740f80b799de6ef8eaee3b99b6595" %}
 
 package:
   name: xo
@@ -7,7 +7,7 @@ package:
 
 source:
   fn: xo-{{ sha256 }}.tar.gz
-  url: https://github.com/scopatz/xo/archive/{{ version }}.tar.gz
+  url: https://github.com/scopatz/xo/releases/download/{{ version }}/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -20,9 +20,9 @@ requirements:
     - python
   run:
     - python
-    - lazyasd
     - urwid
     - pygments
+    - pygments-cache
 
 test:
   commands:
