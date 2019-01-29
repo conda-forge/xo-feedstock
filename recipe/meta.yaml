@@ -1,5 +1,5 @@
-{% set version = "0.3.1" %}
-{% set sha256 = "b32ba2dfd43d53dcb544f089f5f57c30af090903a969017e2cffceccad30df22" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "fb3442e50163c66fe3945813126a5a2f65f8c989d9280223e76983c4f785beaa" %}
 
 package:
   name: xo
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: true  # [win or py2k]
   script: python setup.py install
 
