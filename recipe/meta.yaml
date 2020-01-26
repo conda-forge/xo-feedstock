@@ -7,7 +7,7 @@ package:
 
 source:
   fn: xo-{{ sha256 }}.tar.gz
-  url: https://github.com/scopatz/xo/releases/download/{{ version }}/{{ version }}.tar.gz
+  url: https://github.com/scopatz/xo/releases/download/{{ version }}/xo-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
