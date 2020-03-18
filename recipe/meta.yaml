@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  fn: xo-{{ sha256 }}.tar.gz
   url: https://github.com/scopatz/xo/releases/download/{{ version }}/xo-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 1
-  skip: true  # [win or py2k]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.4
+    - pip
   run:
-    - python
+    - python >=3.4
     - urwid
     - pygments
     - pygments-cache
@@ -31,6 +31,7 @@ test:
 about:
   home: http://exofrills.org/
   license: WTFPL v2
+  license_family: OTHER
   summary: "exofrills text editor"
 
 extra:
